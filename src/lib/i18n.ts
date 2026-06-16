@@ -63,6 +63,20 @@ export const en = {
     "Creating an AI avatar or talking head video":
       "Generate avatar → sync lips to audio → optionally swap face identity.",
   },
+  comboScenarioTitles: {
+    "Building a new feature from scratch": "Building a new feature from scratch",
+    "Fixing a hard bug": "Fixing a hard bug",
+    "Creating a landing page": "Creating a landing page",
+    "Generating AI media (images/video/music)": "Generating AI media (images/video/music)",
+    "Creating a presentation or document": "Creating a presentation or document",
+    "Deploying to production": "Deploying to production",
+    "Setting up a new project": "Setting up a new project",
+    "Writing documentation": "Writing documentation",
+    "Code review cycle": "Code review cycle",
+    "Architecture improvement": "Architecture improvement",
+    "Managing issues and triage": "Managing issues and triage",
+    "Creating an AI avatar or talking head video": "Creating an AI avatar or talking head video",
+  },
   allSkills: "All Skills",
 };
 
@@ -132,6 +146,20 @@ export const id: typeof en = {
       "Konversi rencana ke issues → triase item masuk → kelola status alur kerja.",
     "Creating an AI avatar or talking head video":
       "Hasilkan avatar → sinkronkan bibir ke audio → opsional tukar identitas wajah.",
+  },
+  comboScenarioTitles: {
+    "Building a new feature from scratch": "Membangun fitur baru dari awal",
+    "Fixing a hard bug": "Memperbaiki bug sulit",
+    "Creating a landing page": "Membuat landing page",
+    "Generating AI media (images/video/music)": "Menghasilkan media AI (gambar/video/musik)",
+    "Creating a presentation or document": "Membuat presentasi atau dokumen",
+    "Deploying to production": "Deploy ke production",
+    "Setting up a new project": "Menyiapkan proyek baru",
+    "Writing documentation": "Menulis dokumentasi",
+    "Code review cycle": "Siklus code review",
+    "Architecture improvement": "Perbaikan arsitektur",
+    "Managing issues and triage": "Mengelola issues dan triase",
+    "Creating an AI avatar or talking head video": "Membuat avatar AI atau video talking head",
   },
   allSkills: "Semua Skill",
 };

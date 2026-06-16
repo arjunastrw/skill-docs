@@ -79,7 +79,7 @@ function SkillCard({
               {skill.triggers.slice(0, 3).map((tr) => (
                 <span
                   key={tr}
-                  className="text-[11px] font-mono text-muted-foreground bg-secondary/60 dark:bg-secondary/40 px-1.5 py-0.5 rounded-sm"
+                  className="text-[11px] font-mono text-muted-foreground dark:text-manila/70 bg-secondary/60 dark:bg-secondary/50 px-1.5 py-0.5 rounded-sm"
                 >
                   {tr}
                 </span>
@@ -368,7 +368,9 @@ export default function Home() {
               >
                 <CardContent className="p-5">
                   <h3 className="font-display text-xl text-ink dark:text-manila mb-2">
-                    {combo.scenario}
+                    {t.comboScenarioTitles[
+                      combo.scenario as keyof typeof t.comboScenarioTitles
+                    ] ?? combo.scenario}
                   </h3>
                   <p className="text-sm text-pencil mb-4 leading-relaxed">
                     {t.comboScenarios[

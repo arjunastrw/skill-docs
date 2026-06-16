@@ -69,22 +69,22 @@
   --card-foreground: #ede7df;
   --primary: #ede7df;
   --primary-foreground: #1a1612;
-  --secondary: #2a2520;
+  --secondary: #353028;
   --secondary-foreground: #ede7df;
-  --muted: #2a2520;
-  --muted-foreground: #8b7b6b;
+  --muted: #353028;
+  --muted-foreground: #b0a090;
   --accent: #c73e3a;
   --accent-foreground: #ffffff;
   --destructive: #e05550;
-  --border: #3a3530;
-  --input: #3a3530;
-  --ring: #8b7b6b;
+  --border: #4a4540;
+  --input: #4a4540;
+  --ring: #a89880;
   --manila: #1a1612;
   --ink: #ede7df;
   --stamp: #c73e3a;
   --green: #4a6741;
-  --edge: #3a3530;
-  --pencil: #6b5f52;
+  --edge: #4a4540;
+  --pencil: #a89880;
 }
 
 @layer base {
@@ -106,6 +106,9 @@
 .card-catalog:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(30, 27, 24, 0.12);
+}
+.dark .card-catalog:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 /* Staggered card reveal */
@@ -137,6 +140,9 @@ input:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .card-catalog:hover {
     transform: none;
+  }
+  .dark .card-catalog:hover {
+    box-shadow: none;
   }
   .card-reveal {
     animation: none;
