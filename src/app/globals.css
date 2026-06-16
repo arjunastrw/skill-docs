@@ -1,26 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,400..600;1,14..32,400..600&family=JetBrains+Mono:ital,wght@0,400..600;1,400..600&display=swap");
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-manila: var(--manila);
+  --color-ink: var(--ink);
+  --color-stamp: var(--stamp);
+  --color-green: var(--green);
+  --color-edge: var(--edge);
+  --color-pencil: var(--pencil);
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --background: #f7f3ed;
+  --foreground: #1e1b18;
+  --card: #ffffff;
+  --card-foreground: #1e1b18;
+  --primary: #1e1b18;
+  --primary-foreground: #f7f3ed;
+  --secondary: #ede7df;
+  --secondary-foreground: #1e1b18;
+  --muted: #ede7df;
+  --muted-foreground: #8b7b6b;
+  --accent: #c73e3a;
+  --accent-foreground: #ffffff;
+  --destructive: #c73e3a;
+  --border: #d4c9b8;
+  --input: #d4c9b8;
+  --ring: #8b7b6b;
+  --manila: #f7f3ed;
+  --ink: #1e1b18;
+  --stamp: #c73e3a;
+  --green: #4a6741;
+  --edge: #d4c9b8;
+  --pencil: #8b7b6b;
+}
+
+.dark {
+  --background: #1a1612;
+  --foreground: #ede7df;
+  --card: #24201b;
+  --card-foreground: #ede7df;
+  --primary: #ede7df;
+  --primary-foreground: #1a1612;
+  --secondary: #2a2520;
+  --secondary-foreground: #ede7df;
+  --muted: #2a2520;
+  --muted-foreground: #8b7b6b;
+  --accent: #c73e3a;
+  --accent-foreground: #ffffff;
+  --destructive: #e05550;
+  --border: #3a3530;
+  --input: #3a3530;
+  --ring: #8b7b6b;
+  --manila: #1a1612;
+  --ink: #ede7df;
+  --stamp: #c73e3a;
+  --green: #4a6741;
+  --edge: #3a3530;
+  --pencil: #6b5f52;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-manila text-ink font-body antialiased;
+  }
+  html {
+    @apply scroll-smooth;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Card catalog hover lift */
+.card-catalog {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-catalog:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(30, 27, 24, 0.12);
+}
+
+/* Staggered card reveal */
+@keyframes card-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-reveal {
+  animation: card-reveal 0.35s ease backwards;
+}
+
+/* Category stripe on card top */
+.category-stripe {
+  height: 3px;
+}
+
+/* Focus ring for inputs */
+input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-catalog:hover {
+    transform: none;
+  }
+  .card-reveal {
+    animation: none;
+    opacity: 1;
+  }
 }
