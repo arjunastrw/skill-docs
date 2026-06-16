@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ClientShell } from "@/components/client-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Agent Skills — Agent Skill Reference",
   description:
     "Complete reference for agent skills: names, descriptions, trigger phrases, use cases, and combo suggestions. Find the right skill for any task.",
-  keywords: ["agent", "skills", "ai", "cli", "reference", "opencode"],
+  keywords: ["agent", "skills", "ai", "cli", "reference", "opencode", "mcp"],
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ClientShell>{children}</ClientShell>
       </body>
     </html>
   );

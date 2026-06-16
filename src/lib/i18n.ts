@@ -1,4 +1,9 @@
 export const en = {
+  nav: {
+    start: "Start",
+    skills: "Skills",
+    mcp: "MCP",
+  },
   site: {
     title: "Agent Skills",
     subtitle: "Agent Skill Reference",
@@ -78,9 +83,48 @@ export const en = {
     "Creating an AI avatar or talking head video": "Creating an AI avatar or talking head video",
   },
   allSkills: "All Skills",
+  start: {
+    title: "Get Started",
+    subtitle: "Agent CLI Comparison",
+    description:
+      "Compare the most popular AI agent CLIs. Find the right tool for your workflow — whether you prefer terminal-native, IDE-integrated, or open-source solutions.",
+    tableHeaders: {
+      cli: "CLI",
+      vendor: "Vendor",
+      platform: "Platform",
+      pricing: "Pricing",
+      install: "Install",
+      features: "Key Features",
+    },
+    installGuides: "Install Guides",
+    installGuidesDesc: "Quick setup for each agent CLI. Copy the install command to get started in seconds.",
+    authSetup: "Auth Setup",
+    quickStart: "Quick Start",
+    docs: "Docs",
+  },
+  mcp: {
+    title: "MCP Servers",
+    subtitle: "Model Context Protocol Servers",
+    description:
+      "Extend your agent's capabilities with MCP servers. Browse available servers for file operations, databases, APIs, browsers, search, and more.",
+    searchPlaceholder: "Search MCP servers...",
+    install: "Install",
+    envVars: "Environment Variables",
+    useCases: "Use Cases",
+    noServersFound: "No MCP servers found",
+    noServersHint: "Try a different search term or category filter.",
+    allServers: "All Servers",
+    buildGuide: "Build Your Own MCP Server",
+    buildGuideDesc: "Create custom MCP servers in Python or Node.js. Follow the step-by-step guide below.",
+  },
 };
 
 export const id: typeof en = {
+  nav: {
+    start: "Mulai",
+    skills: "Skill",
+    mcp: "MCP",
+  },
   site: {
     title: "Agent Skills",
     subtitle: "Referensi Skill Agent",
@@ -162,6 +206,43 @@ export const id: typeof en = {
     "Creating an AI avatar or talking head video": "Membuat avatar AI atau video talking head",
   },
   allSkills: "Semua Skill",
+  start: {
+    title: "Mulai",
+    subtitle: "Perbandingan Agent CLI",
+    description:
+      "Bandingkan AI agent CLI paling populer. Temukan alat yang tepat untuk alur kerja Anda — baik terminal-native, IDE-integrated, maupun open-source.",
+    tableHeaders: {
+      cli: "CLI",
+      vendor: "Vendor",
+      platform: "Platform",
+      pricing: "Harga",
+      install: "Install",
+      features: "Fitur Utama",
+    },
+    installGuides: "Panduan Install",
+    installGuidesDesc:
+      "Setup cepat untuk setiap agent CLI. Salin perintah install untuk memulai dalam hitungan detik.",
+    authSetup: "Pengaturan Auth",
+    quickStart: "Mulai Cepat",
+    docs: "Dokumentasi",
+  },
+  mcp: {
+    title: "Server MCP",
+    subtitle: "Server Model Context Protocol",
+    description:
+      "Perluas kemampuan agent Anda dengan server MCP. Jelajahi server yang tersedia untuk operasi file, database, API, browser, pencarian, dan lainnya.",
+    searchPlaceholder: "Cari server MCP...",
+    install: "Install",
+    envVars: "Variabel Lingkungan",
+    useCases: "Kasus Penggunaan",
+    noServersFound: "Server MCP tidak ditemukan",
+    noServersHint:
+      "Coba istilah pencarian atau filter kategori yang berbeda.",
+    allServers: "Semua Server",
+    buildGuide: "Buat Server MCP Sendiri",
+    buildGuideDesc:
+      "Buat server MCP kustom dengan Python atau Node.js. Ikuti panduan langkah demi langkah di bawah.",
+  },
 };
 
 export type Locale = "en" | "id";
