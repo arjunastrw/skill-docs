@@ -3,10 +3,10 @@ import { ClientShell } from "@/components/client-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Agent Skills — Agent Skill Reference",
+  title: "Agent Hub — AI Agent Reference",
   description:
-    "Complete reference for agent skills: names, descriptions, trigger phrases, use cases, and combo suggestions. Find the right skill for any task.",
-  keywords: ["agent", "skills", "ai", "cli", "reference", "opencode", "mcp"],
+    "Complete reference for AI agent developers: CLI comparison, agent skills, MCP servers, AI models, and configuration guides.",
+  keywords: ["agent", "skills", "ai", "cli", "mcp", "models", "reference", "opencode"],
 };
 
 export default function RootLayout({

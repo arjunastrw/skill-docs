@@ -3,10 +3,13 @@ export const en = {
     start: "Start",
     skills: "Skills",
     mcp: "MCP",
+    models: "Models",
+    config: "Config",
+    search: "Search across Agent Hub...",
   },
   site: {
-    title: "Agent Skills",
-    subtitle: "Agent Skill Reference",
+    title: "Agent Hub",
+    subtitle: "Agent Reference",
     description:
       "103 specialized agent skills for software engineering, media generation, design, and tooling. Each skill provides exact instructions and workflows for a specific task.",
   },
@@ -31,7 +34,7 @@ export const en = {
       "Common scenarios and which skills work best together. Each combo forms a complete workflow for a real task.",
   },
   footer: {
-    line1: "Agent Skills Reference · {count} skills across {cats} categories",
+    line1: "Agent Hub · {count} skills across {cats} categories",
     line2: "Deploy via GitHub Pages",
   },
   categories: {
@@ -115,7 +118,53 @@ export const en = {
     noServersHint: "Try a different search term or category filter.",
     allServers: "All Servers",
     buildGuide: "Build Your Own MCP Server",
-    buildGuideDesc: "Create custom MCP servers in Python or Node.js. Follow the step-by-step guide below.",
+    buildGuideDesc:
+      "Create custom MCP servers in Python or Node.js. Follow the step-by-step guide below.",
+  },
+  models: {
+    title: "AI Models",
+    subtitle: "Model Comparison",
+    description:
+      "Compare AI models across providers. Context windows, pricing, benchmarks, and best use cases — find the right model for your agent.",
+    searchPlaceholder: "Search models...",
+    tableHeaders: {
+      model: "Model",
+      provider: "Provider",
+      context: "Context",
+      pricing: "Pricing (Input/Output per 1M tokens)",
+      modalities: "Modalities",
+      bench: "Benchmarks",
+    },
+    strengths: "Strengths",
+    bestUseCases: "Best Use Cases",
+    noModelsFound: "No models found",
+    noModelsHint: "Try a different search term or provider filter.",
+    allModels: "All Models",
+  },
+  config: {
+    title: "Agent Config",
+    subtitle: "Configuration Reference",
+    description:
+      "How to configure each agent CLI. File locations, formats, sections, and best practices — set up your agent once, use it everywhere.",
+    searchPlaceholder: "Search by CLI name...",
+    sections: "Sections",
+    bestPractices: "Best Practices",
+    noConfigFound: "No configuration found",
+    noConfigHint: "Try a different search term.",
+    comparisonTitle: "Side-by-Side Comparison",
+    comparisonDesc: "Equivalent config files across different agent CLIs.",
+  },
+  globalSearch: {
+    placeholder: "Search across Agent Hub...",
+    noResults: "No results found",
+    noResultsHint: "Try a different search term.",
+    sections: {
+      cli: "Agent CLIs",
+      skills: "Skills",
+      mcp: "MCP Servers",
+      models: "AI Models",
+      config: "Config",
+    },
   },
 };
 
@@ -124,10 +173,13 @@ export const id: typeof en = {
     start: "Mulai",
     skills: "Skill",
     mcp: "MCP",
+    models: "Model",
+    config: "Konfigurasi",
+    search: "Cari di Agent Hub...",
   },
   site: {
-    title: "Agent Skills",
-    subtitle: "Referensi Skill Agent",
+    title: "Agent Hub",
+    subtitle: "Referensi Agent",
     description:
       "103 skill agent khusus untuk rekayasa perangkat lunak, generasi media, desain, dan perkakas. Setiap skill menyediakan instruksi dan alur kerja yang tepat untuk tugas tertentu.",
   },
@@ -154,7 +206,7 @@ export const id: typeof en = {
   },
   footer: {
     line1:
-      "Referensi Agent Skills · {count} skill di {cats} kategori",
+      "Agent Hub · {count} skill di {cats} kategori",
     line2: "Deploy via GitHub Pages",
   },
   categories: {
@@ -242,6 +294,51 @@ export const id: typeof en = {
     buildGuide: "Buat Server MCP Sendiri",
     buildGuideDesc:
       "Buat server MCP kustom dengan Python atau Node.js. Ikuti panduan langkah demi langkah di bawah.",
+  },
+  models: {
+    title: "AI Models",
+    subtitle: "Model Comparison",
+    description:
+      "Compare AI models across providers. Context windows, pricing, benchmarks, and best use cases — find the right model for your agent.",
+    searchPlaceholder: "Search models...",
+    tableHeaders: {
+      model: "Model",
+      provider: "Provider",
+      context: "Context",
+      pricing: "Pricing (Input/Output per 1M tokens)",
+      modalities: "Modalities",
+      bench: "Benchmarks",
+    },
+    strengths: "Strengths",
+    bestUseCases: "Best Use Cases",
+    noModelsFound: "No models found",
+    noModelsHint: "Try a different search term or provider filter.",
+    allModels: "All Models",
+  },
+  config: {
+    title: "Agent Config",
+    subtitle: "Configuration Reference",
+    description:
+      "How to configure each agent CLI. File locations, formats, sections, and best practices — set up your agent once, use it everywhere.",
+    searchPlaceholder: "Search by CLI name...",
+    sections: "Sections",
+    bestPractices: "Best Practices",
+    noConfigFound: "No configuration found",
+    noConfigHint: "Try a different search term.",
+    comparisonTitle: "Side-by-Side Comparison",
+    comparisonDesc: "Equivalent config files across different agent CLIs.",
+  },
+  globalSearch: {
+    placeholder: "Search across Agent Hub...",
+    noResults: "No results found",
+    noResultsHint: "Try a different search term.",
+    sections: {
+      cli: "Agent CLIs",
+      skills: "Skills",
+      mcp: "MCP Servers",
+      models: "AI Models",
+      config: "Config",
+    },
   },
 };
 

@@ -357,7 +357,7 @@ export default function MCPPage() {
       <footer className="border-t border-edge/60 bg-white/40 dark:bg-card/40">
         <div className="mx-auto max-w-6xl px-6 py-8 text-center">
           <p className="font-mono text-xs text-muted-foreground">
-            Agent Skills Reference · {mcpServers.length} MCP servers
+            Agent Hub · {mcpServers.length} MCP servers
           </p>
         </div>
       </footer>

@@ -202,7 +202,7 @@ export default function StartPage() {
       <footer className="border-t border-edge/60 bg-white/40 dark:bg-card/40">
         <div className="mx-auto max-w-6xl px-6 py-8 text-center">
           <p className="font-mono text-xs text-muted-foreground">
-            Agent Skills Reference · {agentCLIs.length} agent CLIs
+            Agent Hub · {agentCLIs.length} agent CLIs
           </p>
         </div>
       </footer>
