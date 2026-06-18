@@ -5,6 +5,8 @@ export const en = {
     mcp: "MCP",
     models: "Models",
     config: "Config",
+    prompts: "Prompts",
+    templates: "Templates",
     search: "Search across Agent Hub...",
   },
   site: {
@@ -166,6 +168,55 @@ export const en = {
       config: "Config",
     },
   },
+  prompts: {
+    title: "Prompts",
+    subtitle: "Prompt Templates",
+    description:
+      "Curated prompt templates for AI agents. Copy and use these prompts with any compatible CLI. Community-contributed and tested.",
+    searchPlaceholder: "Search prompts...",
+    copy: "Copy",
+    copied: "Copied",
+    compatibleCLIs: "Compatible CLIs",
+    noPromptsFound: "No prompts found",
+    noPromptsHint: "Try a different search term or category filter.",
+    allPrompts: "All Prompts",
+    contributor: "Contributed by",
+  },
+  templates: {
+    title: "Templates",
+    subtitle: "Agent Templates",
+    description:
+      "Ready-to-use agent configuration templates. Copy a config, place it in your project, and your agent is set up for a specific role.",
+    searchPlaceholder: "Search by CLI...",
+    role: "Role",
+    howToUse: "How to Use",
+    noTemplatesFound: "No templates found",
+    noTemplatesHint: "Try a different search term or CLI filter.",
+    allTemplates: "All Templates",
+    contributor: "Contributed by",
+  },
+  request: {
+    title: "Request Content",
+    subtitle: "Submit a Request",
+    description:
+      "Request new content for Agent Hub. Skills, MCP servers, AI models, CLIs, prompts, or templates — the community votes and contributors pick them up.",
+    selectType: "What do you want to request?",
+    typeSkill: "Agent Skill",
+    typeMCP: "MCP Server",
+    typeModel: "AI Model",
+    typeCLI: "Agent CLI",
+    typePrompt: "Prompt Template",
+    typeTemplate: "Agent Template",
+    nameLabel: "Name",
+    namePlaceholder: "e.g., Super Debugger Skill",
+    descLabel: "Description",
+    descPlaceholder: "What it does and why it should be in Agent Hub...",
+    previewIssue: "Preview Issue",
+    openIssue: "Open GitHub Issue",
+    howItWorks: "How It Works",
+    howItWorksDesc:
+      "Submit a request via GitHub issue. The community can vote with 👍 reactions. Contributors pick top-voted requests to implement.",
+  },
 };
 
 export const id: typeof en = {
@@ -175,6 +226,8 @@ export const id: typeof en = {
     mcp: "MCP",
     models: "Model",
     config: "Konfigurasi",
+    prompts: "Prompt",
+    templates: "Template",
     search: "Cari di Agent Hub...",
   },
   site: {
@@ -339,6 +392,57 @@ export const id: typeof en = {
       models: "AI Models",
       config: "Config",
     },
+  },
+  prompts: {
+    title: "Prompt",
+    subtitle: "Template Prompt",
+    description:
+      "Template prompt terkurasi untuk AI agent. Salin dan gunakan prompt ini dengan CLI yang kompatibel. Kontribusi dan teruji oleh komunitas.",
+    searchPlaceholder: "Cari prompt...",
+    copy: "Salin",
+    copied: "Tersalin",
+    compatibleCLIs: "CLI Kompatibel",
+    noPromptsFound: "Prompt tidak ditemukan",
+    noPromptsHint:
+      "Coba istilah pencarian atau filter kategori yang berbeda.",
+    allPrompts: "Semua Prompt",
+    contributor: "Kontributor",
+  },
+  templates: {
+    title: "Template",
+    subtitle: "Template Agent",
+    description:
+      "Template konfigurasi agent siap pakai. Salin config, letakkan di proyek, dan agent Anda siap untuk peran tertentu.",
+    searchPlaceholder: "Cari berdasarkan CLI...",
+    role: "Peran",
+    howToUse: "Cara Menggunakan",
+    noTemplatesFound: "Template tidak ditemukan",
+    noTemplatesHint:
+      "Coba istilah pencarian atau filter CLI yang berbeda.",
+    allTemplates: "Semua Template",
+    contributor: "Kontributor",
+  },
+  request: {
+    title: "Request Konten",
+    subtitle: "Kirim Permintaan",
+    description:
+      "Minta konten baru untuk Agent Hub. Skill, server MCP, model AI, CLI, prompt, atau template — komunitas vote dan kontributor yang mengerjakan.",
+    selectType: "Apa yang ingin Anda minta?",
+    typeSkill: "Skill Agent",
+    typeMCP: "Server MCP",
+    typeModel: "Model AI",
+    typeCLI: "Agent CLI",
+    typePrompt: "Template Prompt",
+    typeTemplate: "Template Agent",
+    nameLabel: "Nama",
+    namePlaceholder: "contoh: Skill Super Debugger",
+    descLabel: "Deskripsi",
+    descPlaceholder: "Apa fungsinya dan mengapa harus ada di Agent Hub...",
+    previewIssue: "Pratinjau Issue",
+    openIssue: "Buka GitHub Issue",
+    howItWorks: "Cara Kerja",
+    howItWorksDesc:
+      "Kirim permintaan melalui GitHub issue. Komunitas bisa vote dengan reaksi 👍. Kontributor mengerjakan permintaan teratas.",
   },
 };
 
