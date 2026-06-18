@@ -9,7 +9,7 @@ import { GlobalSearch } from "./global-search";
 import { type Locale } from "@/lib/i18n";
 
 interface NavBarProps {
-  labels: { start: string; skills: string; mcp: string; models: string; config: string };
+  labels: { start: string; skills: string; mcp: string; models: string; config: string; prompts: string; templates: string };
   locale: Locale;
   setLocale: (l: Locale) => void;
 }
@@ -20,6 +20,8 @@ const links = [
   { href: "/mcp", key: "mcp" as const },
   { href: "/models", key: "models" as const },
   { href: "/config", key: "config" as const },
+  { href: "/prompts", key: "prompts" as const },
+  { href: "/templates", key: "templates" as const },
 ];
 
 export function NavBar({ labels, locale, setLocale }: NavBarProps) {
@@ -48,6 +50,12 @@ export function NavBar({ labels, locale, setLocale }: NavBarProps) {
 
           <div className="flex items-center gap-2">
             <GlobalSearch labels={labels as (typeof import("@/lib/i18n").translations)["en"]["nav"]} />
+            <Link
+              href="/request"
+              className="hidden sm:flex items-center px-3 py-1.5 rounded-full border border-stamp/30 text-xs font-mono text-stamp hover:bg-stamp/10 transition-colors"
+            >
+              Request
+            </Link>
             <ThemeToggle />
             <LangSwitcher locale={locale} setLocale={setLocale} />
             <button className="lg:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
